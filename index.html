@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metaetiquetas de SEO -->
+    <meta name="description" content="La Conquista - Catálogo de alfombras hechas a mano con 100% algodón. Diseños exclusivos que combinan elegancia y tradición para embellecer tu hogar.">
+    <meta name="keywords" content="alfombras, caminos de mesa, trapos de piso, rejillas, catálogo, hecho a mano, diseño artesanal, decoración, La Conquista, Los Conquistadores, Entre Rios, Argentina">
+    <meta name="author" content="La Conquista">
+
+    <link rel="shortcut icon" href="/asset/media/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/asset/css/estilo.css">
+    
+    <title>La Conquista</title>
+</head>
+<body>
+    <header>
+        <div id="loaderPagina" class="section_loader">
+            <div class="loader">
+              <div class="loader_1"></div>
+              <div class="loader_2"></div>
+            </div>
+          </div>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./asset/media/logo.webp" alt="logo-de-la-empresa">
+            </div>
+            <nav class="nav-menu">
+                <ul class="menu">
+                    <li><a href="#"><span>Inicio</span></a></li>
+                    <li><a href="#productos"><span>Producto</span></a></li>
+                    <li><a href="#nosotros"><span>Nosotros</span></a></li>
+                    <li><a href="#contacto"><span>Coctacto</span></a></li>
+                </ul>
+            </nav>
+            <div class="info-header">
+                <h1>LA CONQUISTA</h1>
+                <h3>ALFOMBRAS 100% ALGODON Y MAS</h3>
+
+                <h2>HECHO A MANO PARA TU HOGAR</h2>
+                <a href="#productos"><button>Ver</button></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor-productos">
+            <section class="productos" id="productos">
+                <div class="filtros">
+                    <button data-tipo="Todos" class="filtro">Todos</button>
+                    <button data-tipo="Alfombras" class="filtro">Alfombras</button>
+                    <button data-tipo="Caminos de Mesa" class="filtro">Caminos de Mesa</button>
+                    <button data-tipo="Elementos de Limpieza" class="filtro">Elementos de Limpieza</button>
+                </div>   
+            <section class="sub-productos">
+                <!-- aqui se generaran los sub-productos -->
+            </section>
+
+            <section class="sec-nosotros" id="nosotros">
+                <h2>Artesanales y elegantes</h2>
+                <p>
+                    Fabricadas artesanalmente y personalizadas, nuestras alfombras son piezas únicas y exclusivas. Cada diseño se inspira en la elegancia de lo rústico, con líneas simples y una paleta de colores neutros que evocan calidez y confort, combinados con la sencillez y calidad de lo esencial.
+                    Nos dedicamos a crear piezas que no solo embellecen cualquier espacio, sino que también reflejan el esfuerzo y la destreza perfeccionados a lo largo de los años. Cada alfombra es una obra de arte en sí misma, diseñada para enriquecer tu hogar con estilo y autenticidad.
+                </p>
+                <div class="container">
+                    <div class="carousel">
+                        <div class="tarjeta a">
+                            <img src="asset/media/Nosotros/telar2.webp" loading="lazy">
+                        </div>        
+                        <div class="tarjeta b">
+                            <img src="asset/media/Nosotros/nosotros8.webp" loading="lazy">
+                        </div> 
+                        <div class="tarjeta c">
+                            <img src="asset/media/Nosotros/telar4.webp" loading="lazy">
+                        </div> 
+                        <div class="tarjeta d">
+                            <img src="asset/media/Nosotros/nosotros7.webp" loading="lazy">
+                        </div> 
+                        <div class="tarjeta e">
+                            <img src="asset/media/Nosotros/telar6.webp" loading="lazy">
+                        </div>      
+                    </div>
+                    <button class="prev" id="prev"><</button>
+                    <button class="next" id="next">></button>
+                </div>
+            </section>
+            
+              </section>
+
+        </div>
+    </main>
+    
+    <footer>
+        <div class="contenedor-footer">
+            <h2>
+                Diseñamos para ti
+            </h2>
+            <div class="contacto" id="contacto">
+                <h2>Puedes encontrarnos</h2>
+                <p>Calle: Carlos Figueroa, 185, Los Conquistadores, Entre Ríos, Argentina. C.P: 3183.</p>
+                <p>Email: laconquista265@gmail.com</p>
+                <p>Teléfono: +54 3458430884</p>
+            </div>
+        <div class="redes-sociales">
+                <h2>Siguenos</h2>
+                <a href="https://www.facebook.com/profile.php?id=100069448742603" target="_blank"><img
+                    src="./asset/media/facebook.png" alt="Facebook La Conquista"></a> 
+                <a href="https://www.instagram.com/grupo_asociativo_la_conquista?igsh=cWVyY3k1bW55eXh1"
+                    target="_blank"><img src="./asset/media/instagram.png" alt="Instagram La Conquista"></a>
+                <a href="https://wa.me/3458430884" target="_blank"><img src="./asset/media/whatsapp.png"
+                    alt="WhatsApp La Conquista"></a> 
+                <a href="mailto:laconquista265@gmail.com" target="_blank"><img
+                    src="./asset/media/gmail.png" alt="Gmail La Conquista"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/asset/js/index.js"></script>
+<script src="/asset/js/carrusel.js"></script>
+<script src="/asset/js/pantallaDeCarga.js"></script>
+</html>
