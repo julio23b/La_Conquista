@@ -23,7 +23,7 @@ const productos = [
     { tipo: "Elementos de Limpieza", medida: "35x40cm", img: "asset/media/Productos/Elementos de limpieza/rejilla1.webp", descripción: "Rejilla gris", },
     { tipo: "Elementos de Limpieza", medida: "35x45cm", img: "asset/media/Productos/Elementos de limpieza/rejilla2.webp", descripción: "Rejilla pesada blanca", },
     { tipo: "Elementos de Limpieza", medida: "50x50cm", img: "asset/media/Productos/Elementos de limpieza/tpiso1.webp", descripción: "Trapo de piso gris", },
-    { tipo: "Elementos de Limpieza", medida: "50x50cm", img: "asset/media/Productos/Elementos de limpieza/tpiso2.webp", descripción: "Trapo de piso blanco", },
+    { tipo: "Elementos de Limpieza", medida: "50x50cm", img: "asset/media/Productos/Elementos de limpieza/tpiso2.jpg", descripción: "Trapo de piso blanco", },
 ];
 
 // Seleccionamos los botones de filtro y el contenedor de sub-productos
