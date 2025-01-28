@@ -365,6 +365,8 @@ button:hover::before {
 }
 
 .card-back h2 {
+    text-align: center;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -379,14 +381,13 @@ button:hover::before {
     justify-content: center;
     margin-bottom: 20px;
     display: flex;
-    gap: 10px;
-    padding: 10px 5px 10px 5px;
+    gap: 15px;
+    padding: 15px;
 }
 
 .filtro {
     padding: 10px 10px;
     background-color: var(--color-recuadros);
-    color: rgb(0, 0, 0);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -395,6 +396,7 @@ button:hover::before {
 .filtros button {
     font-family: var(--font-nav);
     font-weight: bold;
+    font-size: 0,9rem;
     color: black;
 }
 
@@ -419,15 +421,19 @@ button:hover::before {
 }
 
 .sec-nosotros p {
-    max-width: 800px;
+    text-align: center;
     margin: 0 auto 40px auto;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #000000;
     font-family: var(--font-text);
 
 }
 
-
+@media (max-width: 480px) {
+    .filtro {
+        width: 90px;
+    }
+}
 /* Estilo del carrusel */
 .container {
     display: grid;
@@ -721,9 +727,10 @@ footer {
 }
 
 .contacto p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 5px 0;
     line-height: 1.5;
+
 }
 
 /* Redes Sociales */
