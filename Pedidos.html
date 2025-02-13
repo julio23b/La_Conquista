@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Conquista - Pedidos</title>
+    <link rel="shortcut icon" href="/asset/media/logo.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="/asset/css/pedido.css">
+</head>
+
+<body>
+    <header>
+        <div id="loaderPagina" class="section_loader">
+            <div class="loader">
+                <div class="loader_1"></div>
+                <div class="loader_2"></div>
+            </div>
+        </div>
+        <div class="header-container">
+            <nav class="nav-menu">
+                <ul class="menu">
+                    <li><a href="/index.html"><span class="spanmenu">Inicio</span></a></li>
+                    <li><a href="/index.html#productos"><span class="spanmenu" >Producto</span></a></li>
+                    <li><a href="/index.html#nosotros"><span class="spanmenu">Nosotros</span></a></li>
+                    <li><a href="/index.html#contacto"><span class="spanmenu">Contacto</span></a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section class="productos">
+            <!-- aqui se generaran los productos -->
+        </section>
+        <div class="contenedor">
+            <main id="items" class="productos"></main>
+
+            <aside class="carrito-container">
+                <div class="carrito">
+                    <h2 class="text-center">Carrito</h2>
+                    <ul id="carrito" class="lista-carrito"></ul>
+                    <h4 class="text-center">Cantidad total: <span id="total-cantidad">0</span></h4>
+                    <button id="boton-vaciar" class="btn rojo">Vaciar</button>
+                    <button id="boton-pedido" class="btn verde">Realizar pedido</button>
+                </div>
+            </aside>
+        </div>
+
+
+    </main>
+
+
+
+    <script src="/asset/js/pedidos.js"></script>
+    <script src="/asset/js/pantallaDeCarga.js"></script>
+</body>
+
+</html>
