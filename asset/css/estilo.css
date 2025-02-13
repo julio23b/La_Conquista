@@ -279,17 +279,17 @@ span:hover::after {
 
     .nav-menu a {
         font-size: 0.9rem;
-        margin: 5px;
+        margin: 3px;
     }
 
     .logo img {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
     .logo {
         position: absolute;
-        top: 35px;
-        left: 35px;
+        top: 40px;
+        left: 10px;
     }
 }
 
