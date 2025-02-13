@@ -113,13 +113,13 @@ main {
 
 .logo {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 55px;
+    left: 10px;
 }
 
 .logo img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 
