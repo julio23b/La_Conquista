@@ -32,9 +32,28 @@ const DOMcarrito = document.querySelector('#carrito');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 const DOMbotonPedido = document.querySelector('#boton-pedido');
 const DOMtotalCantidad = document.querySelector('#total-cantidad');
+// Selecciona todos los botones de filtro
+const filtros = document.querySelectorAll('.filtro');
 
-function renderizarProductos() {
-    baseDeDatos.forEach((tipo) => {
+// Añadir un evento de clic a cada botón de filtro
+filtros.forEach(filtro => {
+    filtro.addEventListener('click', (e) => {
+        const tipoSeleccionado = e.target.dataset.tipo;  // Obtén el tipo del botón seleccionado
+        renderizarProductos(tipoSeleccionado);  // Llama a la función de renderización pasándole el tipo
+    });
+});
+
+function renderizarProductos(filtroTipo = 'Todos') {
+    // Limpiar el contenido actual de los productos
+    DOMitems.innerHTML = '';
+
+    // Filtrar los productos según el tipo seleccionado
+    const productosFiltrados = filtroTipo === 'Todos'
+        ? baseDeDatos
+        : baseDeDatos.filter(producto => producto.tipo === filtroTipo);
+
+    // Renderizar los productos filtrados
+    productosFiltrados.forEach((tipo) => {
         const miNodo = document.createElement('div');
         miNodo.classList.add('div');
         miNodo.innerHTML = `
@@ -48,7 +67,7 @@ function renderizarProductos() {
                     <h2>${tipo.descripción}</h2>
                     <p><strong>Medidas: ${tipo.medida}</strong></p>
                     <button class="btn btn-primary agregar-carrito" data-id="${tipo.id}">
-                        Agregar (<span class="btnspan" id="contador-${tipo.id}">0</span>)
+                        Agregar (<span class="btnspan" id="contador-${tipo.id}">${getCantidadEnCarrito(tipo.id)}</span>)
                     </button>
                 </div>
             </div>
@@ -57,36 +76,32 @@ function renderizarProductos() {
         DOMitems.appendChild(miNodo);
     });
 
+    // Agregar eventos a los botones de agregar al carrito
     document.querySelectorAll('.agregar-carrito').forEach(boton => {
         boton.addEventListener('click', (e) => {
             const producto = baseDeDatos.find(p => p.id == e.target.dataset.id);
-
-            // Verifica si el producto existe en la base de datos
-            if (!producto) {
-                console.error('Producto no encontrado');
-                return; // Detiene la ejecución si no se encuentra el producto
-            }
-
             const existe = carrito.find(p => p.id === producto.id);
             if (existe) {
                 existe.cantidad += 1;
             } else {
                 carrito.push({ ...producto, cantidad: 1 });
             }
-
             actualizarCarrito();
-
-            // Asegúrate de que el producto exista antes de actualizar el contador
             const contador = document.getElementById(`contador-${producto.id}`);
             if (contador) {
                 contador.textContent = carrito.find(p => p.id === producto.id)?.cantidad || 0;
             }
         });
     });
-
 }
 
+// Función para obtener la cantidad de un producto en el carrito
+function getCantidadEnCarrito(id) {
+    const productoEnCarrito = carrito.find(p => p.id === id);
+    return productoEnCarrito ? productoEnCarrito.cantidad : 0;
+}
 
+// Función para actualizar el carrito (esto ya lo tienes)
 function actualizarCarrito() {
     DOMcarrito.innerHTML = '';
     let totalCantidad = 0;
@@ -123,7 +138,7 @@ function actualizarCarrito() {
     });
 }
 
-// Función para actualizar los contadores en las tarjetas
+// Función para actualizar los contadores en las tarjetas (lo que ya tenías, solo que más ajustado)
 function actualizarContadores() {
     baseDeDatos.forEach(producto => {
         const contador = document.getElementById(`contador-${producto.id}`);
@@ -133,6 +148,7 @@ function actualizarContadores() {
         }
     });
 }
+
 
 function vaciarCarrito() {
     carrito = [];
