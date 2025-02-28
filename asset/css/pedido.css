@@ -183,7 +183,6 @@ body {
 .productos {
     display: grid;
     grid-template-columns: auto;
-    margin-left: -10%;
     padding: 5px 5px 5px 1px;
     width: 100vw;
 }
@@ -382,6 +381,7 @@ body {
     .productos {
         grid-template-columns: auto;
         justify-items: center;
+        margin-left: 30px;
     }
 
     .carrito-container {
