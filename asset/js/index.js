@@ -1,4 +1,5 @@
 const productos = [
+    { tipo: "Alfombras", medida: "50x100cm", img: "asset/media/Productos/Alfombra/alfombraM1.webp", descripción: "Alfombra medialuna", },
     { tipo: "Alfombras", medida: "50x100cm", img: "asset/media/Productos/Alfombra/veteada-con-flecos1.webp", descripción: "Alfombra veteada con flecos", },
     { tipo: "Alfombras", medida: "50x85cm", img: "asset/media/Productos/Alfombra/veteada-con-flecos.webp", descripción: "Alfombra veteada con flecos", },
     { tipo: "Alfombras", medida: "60x60cm", img: "asset/media/Productos/Alfombra/alfom1.webp", descripción: "Alfombra tipo Handira cuadrada", },
