@@ -1,4 +1,5 @@
-const baseDeDatos = [{ id: 1, tipo: "Alfombras", medida: "50x100cm", img: "asset/media/Productos/Alfombra/veteada-con-flecos1.webp", descripción: "Alfombra veteada con flecos", },
+const baseDeDatos = [
+{ id: 1, tipo: "Alfombras", medida: "50x100cm", img: "asset/media/Productos/Alfombra/veteada-con-flecos1.webp", descripción: "Alfombra veteada con flecos", },
 { id: 2, tipo: "Alfombras", medida: "50x85cm", img: "asset/media/Productos/Alfombra/veteada-con-flecos.webp", descripción: "Alfombra veteada con flecos", },
 { id: 3, tipo: "Alfombras", medida: "60x60cm", img: "asset/media/Productos/Alfombra/alfom1.webp", descripción: "Alfombra tipo Handira cuadrada", },
 { id: 4, tipo: "Alfombras", medida: "50cm", img: "asset/media/Productos/Alfombra/alfom2.webp", descripción: "Alfombra tipo Handira redonda", },
@@ -24,7 +25,9 @@ const baseDeDatos = [{ id: 1, tipo: "Alfombras", medida: "50x100cm", img: "asset
 { id: 24, tipo: "Elementos de Limpieza", medida: "35x40cm", img: "asset/media/Productos/Elementos de limpieza/rejilla1.webp", descripción: "Rejilla gris", },
 { id: 25, tipo: "Elementos de Limpieza", medida: "35x45cm", img: "asset/media/Productos/Elementos de limpieza/rejilla2.webp", descripción: "Rejilla pesada blanca", },
 { id: 26, tipo: "Elementos de Limpieza", medida: "50x50cm", img: "asset/media/Productos/Elementos de limpieza/tpiso1.webp", descripción: "Trapo de piso gris", },
-{ id: 27, tipo: "Elementos de Limpieza", medida: "50x50cm", img: "asset/media/Productos/Elementos de limpieza/tpiso2.jpg", descripción: "Trapo de piso blanco", },];
+{ id: 27, tipo: "Elementos de Limpieza", medida: "50x50cm", img: "asset/media/Productos/Elementos de limpieza/tpiso2.jpg", descripción: "Trapo de piso blanco", },
+{ id: 28, tipo: "Alfombras", medida: "50x100cm", img: "asset/media/Productos/Alfombra/alfombraM1.webp", descripción: "Alfombra medialuna", },
+];
 let carrito = [];
 
 const DOMitems = document.querySelector('#items');
